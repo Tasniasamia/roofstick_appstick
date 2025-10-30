@@ -9,7 +9,9 @@ export default function RootLayout({
       <div
         >
           <Navbar/>
+
           {children}
+
         </div>
     );
   }

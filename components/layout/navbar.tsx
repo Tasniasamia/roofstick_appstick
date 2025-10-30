@@ -1,26 +1,32 @@
 "use client";
-
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { Globe, LogIn } from "lucide-react";
 import Image from "next/image";
 import React from "react";
+import { FaChevronDown } from "react-icons/fa";
 
 const Navbar = () => {
+  const user = true;
   return (
     <div className="bg-white">
       <div className="container">
-        <div className="flex justify-between items-center py-8">
+        <div className="flex justify-between items-center md:py-8 py-4">
           <Image
             src="/logo.png"
             width={74}
             height={56}
-            className="h-14 w-[74px] object-cover"
             alt="logo"
+            className="object-fill 
+             h-10 w-[60px]      
+             sm:h-12 sm:w-[68px] 
+             md:h-14 md:w-[74px]"
           />
-          <ul className="list-none flex gap-10 items-center text-[20px] font-medium font-roboto leading-7">
+
+          <ul className="list-none lg:flex hidden gap-10 items-center text-[20px] font-medium font-roboto leading-7">
             <HoverDropdown label="Home" items={["Home 1", "Home 2"]} />
             <li className="relative pb-1 after:absolute after:w-0 after:h-0.5 after:content-[''] after:bg-[#00ACC1] hover:after:w-full after:left-0 after:bottom-0 after:duration-300 text-[#05073C] cursor-pointer hover:text-[#00ACC1] duration-300 transition-all">
               About
@@ -33,6 +39,22 @@ const Navbar = () => {
             </li>
             <HoverDropdown label="More" items={["Blog", "FAQ", "Contact"]} />
           </ul>
+
+          <div className="lg:bg-white shadow-custom bg-transparent flex gap-4 items-center rounded-[10px] px-6 py-2">
+            <Image
+              src="/wishlist.png"
+              width={24}
+              height={24}
+              alt="wishlist"
+              className="h-5 w-5 sm:h-9 sm:w-9 md:h-10 md:w-10 cursor-pointer"
+            />
+            <Globe className="text-xl sm:text-2xl md:text-2xl cursor-pointer" />
+            {user ? (
+              <HoverDropdown items={["Dashboard", "Logout"]} image="/man.png" />
+            ) : (
+              <LogIn className="text-xl sm:text-2xl md:text-2xl cursor-pointer" />
+            )}
+          </div>
         </div>
       </div>
     </div>
@@ -41,13 +63,14 @@ const Navbar = () => {
 
 export default Navbar;
 
-/* ✅ Hover Dropdown Component (with your custom class) */
 function HoverDropdown({
   label,
   items,
+  image,
 }: {
-  label: string;
+  label?: string;
   items: string[];
+  image?: string;
 }) {
   const [open, setOpen] = React.useState(false);
 
@@ -56,12 +79,25 @@ function HoverDropdown({
       <div
         onMouseEnter={() => setOpen(true)}
         onMouseLeave={() => setOpen(false)}
-        className="relative inline-block"
+        className="relative inline-block group"
       >
         <DropdownMenuTrigger asChild>
-          <div className="relative pb-1 after:absolute after:w-0 after:h-0.5 after:content-[''] after:bg-[#00ACC1] hover:after:w-full after:left-0 after:bottom-0 after:duration-300 text-[#05073C] cursor-pointer hover:text-[#00ACC1] duration-300 transition-all">
-            {label}
-          </div>
+          {image ? (
+            <Image
+              src={image}
+              width={40}
+              height={40}
+              className="h-8 w-8 sm:h-9 sm:w-9 md:h-10 md:w-10 object-fill rounded-full cursor-pointer"
+              alt="image"
+            />
+          ) : (
+            <div className="relative pb-1  after:absolute after:w-0 after:h-0.5 after:content-[''] after:bg-[#00ACC1] hover:after:w-full after:left-0 after:bottom-0 after:duration-300 text-[#05073C] cursor-pointer hover:text-[#00ACC1] duration-300 transition-all">
+              <div className="flex gap-1.5 items-center">
+                {label}{" "}
+                <FaChevronDown className="group-hover:rotate-180 duration-300" />
+              </div>
+            </div>
+          )}
         </DropdownMenuTrigger>
 
         <DropdownMenuContent
