@@ -1,9 +1,10 @@
+import HeroSection1 from '@/components/(site)/home1/hero';
 import React from 'react';
 
 const page = () => {
     return (
         <div>
-            <h1 className='text-4xl font-raleway font-bold'>Hello dear</h1>
+            <HeroSection1/>
         </div>
     );
 };
