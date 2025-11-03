@@ -9,10 +9,10 @@ const HeroSection1 = () => {
         width={1000}
         height={1080}
         alt="hero image"
-        className="absolute inset-0 h-[1080px] w-full "
+        className="absolute inset-0 lg:h-[1080px] md:h-[700px] h-full  w-full "
         priority
       />
-      <div className="relative w-full h-[1080px]">
+      <div className="relative w-full lg:h-[1080px] md:h-[700px] h-full  bg-red-300">
      
         <div className="hero-wrapper">
           <div className="hero-img1">
