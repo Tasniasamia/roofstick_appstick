@@ -97,7 +97,7 @@ padding:0 8px
 .hero-wrapper{
   @apply max-w-[1840px] relative h-full mx-auto px-6 text-black z-10
 }
-@media (max-width: 2560px) and (min-width: 1820px) {
+@media (min-width: 1820px) {
 .hero-img1{
   @apply w-[777px] h-[360px] absolute bottom-[148px] left-0;
 }
@@ -318,45 +318,6 @@ img.hero-img3-img{
           @apply w-full h-full z-20 absolute object-cover
         }
       }
-
-
-
-
-
-      /* @media (max-width:1279px) and (min-width:1024px) {
-        .hero-img1 {
-          @apply w-[420px] h-[260px] absolute bottom-[100px] left-0;
-        }
-        h1.hero-img1-text {
-          @apply text-[72px] leading-[64px] text-white font-medium absolute text-center right-1/2 translate-x-1/2 top-0;
-        }
-        .hero-img1-img {
-          @apply w-full h-full absolute object-fill;
-        }
-      
-        .hero-img2 {
-          @apply w-[220px] h-[320px] absolute top-[100px] left-[calc(50%+30px)] -translate-x-1/2;
-        }
-        .hero-img2-img {
-          @apply w-full h-full absolute object-cover;
-        }
-        h1.hero-img2-text {
-          @apply absolute top-1/2 right-[-32px] -translate-y-1/2 -rotate-90 text-white text-[72px] leading-[64px] font-medium text-center;
-        }
-      
-        div.hero-img3 {
-          @apply w-[360px] h-[280px] absolute bottom-[240px] right-0;
-        }
-        h1.hero-img3-text {
-          @apply text-[72px] leading-[64px] font-medium text-white absolute text-center right-1/2 translate-x-1/2 top-0;
-        }
-        .hero-img3-img {
-          @apply w-full h-full absolute object-cover;
-        }
-      } */
-
-
-
 
 
 

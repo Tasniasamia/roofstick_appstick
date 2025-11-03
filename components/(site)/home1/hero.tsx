@@ -12,7 +12,7 @@ const HeroSection1 = () => {
         className="absolute inset-0 lg:h-[1080px] md:h-[700px] h-full  w-full "
         priority
       />
-      <div className="relative w-full lg:h-[1080px] md:h-[700px] h-full  bg-red-300">
+      <div className="relative w-full lg:h-[1080px] md:h-[700px] h-full">
      
         <div className="hero-wrapper">
           <div className="hero-img1">
