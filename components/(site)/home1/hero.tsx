@@ -1,6 +1,6 @@
 "use client";
 import { LocationDropdown } from "@/components/common/select";
-import { HousePlus, Search } from "lucide-react";
+import { HousePlus, MoveUpRight, Search } from "lucide-react";
 import Image from "next/image";
 import React, { useState } from "react";
 import { MapPin } from "lucide-react";
@@ -43,13 +43,22 @@ const HeroSection1 = () => {
     { value: "san-diego", label: "San Diego" },
     { value: "dallas", label: "Dallas" },
   ];
-  const handleSubmit = () => {};
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = e.target as HTMLFormElement;
+    console.log(
+      form.location.value,
+      form.category.value,
+      form.building_type.value
+    );
+  };
+
   return (
     <>
       <Image
         src="/hero.png"
         width={1000}
-        height={1080}
+        height={1000}
         alt="hero image"
         className="absolute inset-0 lg:h-[1080px] md:h-[700px] h-full  w-full "
         priority
@@ -57,6 +66,46 @@ const HeroSection1 = () => {
       <div className="relative w-full lg:h-[1080px] md:h-[850px] h-full">
         <div className="hero-wrapper">
           <div className="max-w-[1320px] mx-auto pt-[120px] z-50 relative">
+            <div className="absolute h-fit w-fit 2xl:top-[145px] top-[120px] right-[165px] lg:block hidden">
+              <div className="circle-text relative flex items-center justify-center">
+                <svg
+                  viewBox="0 0 200 200"
+                  width="200"
+                  height="200"
+                  className="rotate-text"
+                >
+                  <defs>
+                    <path
+                      id="textcircle"
+                      d="M100,100 m-75,0 a75,75 0 1,1 150,0 a75,75 0 1,1 -150,0"
+                    />
+                  </defs>
+
+                  <text
+                    fontSize="14"
+                    fill="#000"
+                    fontFamily="Arial"
+                    letterSpacing="4"
+                  >
+                    <textPath
+                      xlinkHref="#textcircle"
+                      startOffset="0%"
+                      className="flex-shink-0 font-Inter leading-normal text-[30px]"
+                    >
+                      R o o f s t i c k-Ag e n c y
+                    </textPath>
+                  </text>
+                </svg>
+
+                <div className="center-icon absolute font-light">
+                  <MoveUpRight
+                    size={37}
+                    strokeWidth={0.5}
+                    className="center-icon-right cursor-pointer"
+                  />
+                </div>
+              </div>
+            </div>
             <h1 className="text-primary xl:text-[64px] sm:text-[50px] text-[32px] font-raleway xl:leading-[130%] leading-[120%] lg:pt-[50px] 2xl:pt-[120px] font-extrabold sm:text-start text-center">
               Unlock Your Future <br className="sm:block hidden" /> Home with
               Roofstick
@@ -118,7 +167,7 @@ const HeroSection1 = () => {
                 <LocationDropdown
                   customClass="w-[252px]"
                   options={buliding}
-                  name="bulidng_type"
+                  name="building_type"
                   placeholder="Building Type"
                 />
                 <LocationDropdown
