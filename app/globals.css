@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -16,6 +16,9 @@
   font-family: "Raleway";
   src: url("/fonts/Raleway-ExtraBold.ttf") format("truetype");
 }
+
+
+
 .text-secondary {
   color: var(--color-text-secondary);
   transition: color 0.3s ease;
@@ -44,9 +47,8 @@
   transition: all 3s;
 }
 
-.font-Inter{
+.font-Inter {
   font-family: "Inter", sans-serif;
-
 }
 
 .font-roboto {
@@ -417,8 +419,6 @@
   background: var(--Inner, #fff);
 }
 
-
-
 .circle-text {
   position: relative;
   width: 200px;
@@ -440,14 +440,11 @@
   margin: auto;
 }
 
-
-.center-icon-right{
-
-/* transform: rotate(-135deg); */
-flex-shrink: 0;
-aspect-ratio: 37.14/21.22;
+.center-icon-right {
+  /* transform: rotate(-135deg); */
+  flex-shrink: 0;
+  aspect-ratio: 37.14/21.22;
 }
-
 
 .rotate-text text {
   animation: textRotate 10s linear infinite;
@@ -462,3 +459,5 @@ aspect-ratio: 37.14/21.22;
     transform: rotate(360deg);
   }
 }
+
+

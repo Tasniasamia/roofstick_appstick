@@ -1,10 +1,10 @@
-import HeroSection1 from '@/components/(site)/home/hero';
+import HeroSection2 from '@/components/(site)/home/hero2';
 import React from 'react';
 
 const page = () => {
     return (
         <div>
-            <HeroSection1/>
+            <HeroSection2/>
         </div>
     );
 };
