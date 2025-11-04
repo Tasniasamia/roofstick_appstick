@@ -112,7 +112,7 @@ padding:0 8px
   @apply w-[777px] h-[360px] absolute bottom-[148px] left-0;
 }
 h1.hero-img1-text{
-  @apply text-[128px]  font-medium w-fit h-fit text-white m-0 p-0 leading-[95px]  absolute text-center right-1/2 translate-x-1/2 top-0 z-30;
+  @apply text-[128px]  font-medium w-fit h-fit text-white m-0 p-0 leading-[95px]  absolute text-center right-1/2 translate-x-1/2 top-1 z-30;
 }
 .hero-img1-img{
   @apply w-full h-full z-20 absolute object-fill;
@@ -133,7 +133,7 @@ div.hero-img3{
   @apply w-[653px] h-[365px] absolute bottom-[354px] right-0
 }
 h1.hero-img3-text{
-  @apply text-[128px]  font-medium w-fit h-fit text-white m-0 p-0 leading-[95px]  absolute text-center right-1/2 translate-x-1/2 top-0 z-30
+  @apply text-[128px]  font-medium w-fit h-fit text-white m-0 p-0 leading-[95px]  absolute text-center right-1/2 translate-x-1/2 top-1 z-30
 }
 img.hero-img3-img{
   @apply w-full h-full z-20 absolute object-cover
@@ -146,7 +146,7 @@ img.hero-img3-img{
     @apply w-[720px] h-[360px] absolute bottom-[148px] left-0;
   }
   h1.hero-img1-text{
-    @apply text-[128px]  font-medium w-fit h-fit text-white m-0 p-0 leading-[95px]  absolute text-center right-1/2 translate-x-1/2 top-0 z-30;
+    @apply text-[128px]  font-medium w-fit h-fit text-white m-0 p-0 leading-[95px]  absolute text-center right-1/2 translate-x-1/2 top-1 z-30;
   }
   .hero-img1-img{
     @apply w-full h-full z-20 absolute object-fill
@@ -165,7 +165,7 @@ img.hero-img3-img{
     @apply w-[600px] h-[365px] absolute bottom-[340px] right-0
   }
   h1.hero-img3-text{
-    @apply text-[128px]  font-medium w-fit h-fit text-white m-0 p-0 leading-[95px]  absolute text-center right-1/2 translate-x-1/2 top-0 z-30
+    @apply text-[128px]  font-medium w-fit h-fit text-white m-0 p-0 leading-[95px]  absolute text-center right-1/2 translate-x-1/2 top-1 z-30
   }
   .hero-img3-img{
     @apply w-full h-full z-20 absolute object-cover
@@ -178,7 +178,7 @@ img.hero-img3-img{
       @apply w-[680px] h-[360px] absolute bottom-[148px] left-0;
     }
     h1.hero-img1-text{
-      @apply text-[128px]  font-medium w-fit h-fit text-white m-0 p-0 leading-[95px]  absolute text-center right-1/2 translate-x-1/2 top-0 z-30;
+      @apply text-[128px]  font-medium w-fit h-fit text-white m-0 p-0 leading-[95px]  absolute text-center right-1/2 translate-x-1/2 top-1 z-30;
     }
     .hero-img1-img{
       @apply w-full h-full z-20 absolute object-fill
@@ -198,7 +198,7 @@ img.hero-img3-img{
       @apply w-[580px] h-[365px] absolute bottom-60 right-0
     }
     h1.hero-img3-text{
-      @apply text-[128px]  font-medium w-fit h-fit text-white m-0 p-0 leading-[95px]  absolute text-center right-1/2 translate-x-1/2 top-0 z-30
+      @apply text-[128px]  font-medium w-fit h-fit text-white m-0 p-0 leading-[95px]  absolute text-center right-1/2 translate-x-1/2 top-1 z-30
     }
     .hero-img3-img{
       @apply w-full h-full z-20 absolute object-cover
@@ -212,7 +212,7 @@ img.hero-img3-img{
         @apply w-[600px] h-[360px] absolute bottom-[148px] left-0;
       }
       h1.hero-img1-text{
-        @apply text-[128px]  font-medium w-fit h-fit text-white m-0 p-0 leading-[95px]  absolute text-center right-1/2 translate-x-1/2 top-0 z-30;
+        @apply text-[128px]  font-medium w-fit h-fit text-white m-0 p-0 leading-[95px]  absolute text-center right-1/2 translate-x-1/2 top-1 z-30;
       }
       .hero-img1-img{
         @apply w-full h-full z-20 absolute object-fill
@@ -231,7 +231,7 @@ img.hero-img3-img{
         @apply w-[500px] h-[365px] absolute bottom-60 right-0
       }
       h1.hero-img3-text{
-        @apply text-[128px]  font-medium w-fit h-fit text-white m-0 p-0 leading-[95px]  absolute text-center right-1/2 translate-x-1/2 top-0 z-30
+        @apply text-[128px]  font-medium w-fit h-fit text-white m-0 p-0 leading-[95px]  absolute text-center right-1/2 translate-x-1/2 top-1 z-30
       }
       .hero-img3-img{
         @apply w-full h-full z-20 absolute object-cover
@@ -264,7 +264,7 @@ img.hero-img3-img{
           @apply w-[500px] h-[300px] absolute bottom-[300px] left-0;
         }
         h1.hero-img1-text{
-          @apply text-[100px]  font-medium w-fit h-fit text-white m-0 p-0 leading-[95px]  absolute text-center right-1/2 translate-x-1/2 top-[-18px] z-30;
+          @apply text-[100px]  font-medium w-fit h-fit text-white m-0 p-0 leading-[95px]  absolute text-center right-1/2 translate-x-1/2 top-[-10px] z-30;
         }
         .hero-img1-img{
           @apply w-full h-full z-20 absolute object-fill
@@ -283,7 +283,7 @@ img.hero-img3-img{
           @apply w-[400px] h-[300px] absolute bottom-[40%] right-0
         }
         h1.hero-img3-text{
-          @apply text-[100px]  font-medium w-fit h-fit text-white m-0 p-0 leading-[95px]  absolute text-center right-1/2 translate-x-1/2 top-[-18px] z-30
+          @apply text-[100px]  font-medium w-fit h-fit text-white m-0 p-0 leading-[95px]  absolute text-center right-1/2 translate-x-1/2 top-[-10px] z-30
         }
         .hero-img3-img{
           @apply w-full h-full z-20 absolute object-cover
@@ -303,7 +303,7 @@ img.hero-img3-img{
           @apply w-[420px] h-[260px] absolute bottom-[300px] left-0;
         }
         h1.hero-img1-text{
-          @apply text-[100px]  font-medium w-fit h-fit text-white m-0 p-0 leading-[95px]  absolute text-center right-1/2 translate-x-1/2 top-[-18px] z-30;
+          @apply text-[100px]  font-medium w-fit h-fit text-white m-0 p-0 leading-[95px]  absolute text-center right-1/2 translate-x-1/2 top-[-10px] z-30;
         }
         .hero-img1-img{
           @apply w-full h-full z-20 absolute object-fill
@@ -322,7 +322,7 @@ img.hero-img3-img{
           @apply w-[360px] h-[280px] absolute bottom-[40%] right-0
         }
         h1.hero-img3-text{
-          @apply text-[100px]  font-medium w-fit h-fit text-white m-0 p-0 leading-[95px]  absolute text-center right-1/2 translate-x-1/2 top-[-18px] z-30
+          @apply text-[100px]  font-medium w-fit h-fit text-white m-0 p-0 leading-[95px]  absolute text-center right-1/2 translate-x-1/2 top-[-10px] z-30
         }
         .hero-img3-img{
           @apply w-full h-full z-20 absolute object-cover
@@ -369,7 +369,7 @@ img.hero-img3-img{
       
       @media (max-width:1023px) and (min-width:767px) {
         .hero-img1{
-          @apply w-[200px] h-[300px] absolute bottom-[50px] left-0;
+          @apply w-[200px] h-[300px] absolute bottom-[120px] left-0;
         }
         h1.hero-img1-text{
           @apply absolute top-1/2 -right-2.5 -translate-y-1/2 
@@ -389,10 +389,10 @@ img.hero-img3-img{
         -rotate-90  text-white  font-medium text-[60px] leading-[95px] tracking-[0] not-italic z-30 text-center m-0 p-0;
         }
         div.hero-img3{
-          @apply w-[200px] h-[300px]  absolute bottom-[10%] right-0
+          @apply w-[200px] h-[300px]  absolute bottom-[40%] right-0
         }
         h1.hero-img3-text{
-          @apply absolute top-1/2 right-0 -translate-y-1/2 -rotate-90  text-white  font-medium text-[60px] leading-[95px] tracking-[0] not-italic z-30 text-center m-0 p-0;
+          @apply absolute top-1/2 right-[-34px] -translate-y-1/2 -rotate-90  text-white  font-medium text-[60px] leading-[95px] tracking-[0] not-italic z-30 text-center m-0 p-0;
         }
         .hero-img3-img{
           @apply w-full h-full z-20 absolute object-cover
@@ -437,3 +437,21 @@ img.hero-img3-img{
 
 
 
+.tab{
+  border-radius: 40px;
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, rgba(217, 217, 217, 0.06) 100%);
+box-shadow: 0 4px 25px -1px rgba(0, 0, 0, 0.20);
+backdrop-filter: blur(10px);
+}
+.tab-content{
+border-radius: 12px;
+background: linear-gradient(90deg, rgba(255, 255, 255, 0.06) 0%, rgba(217, 217, 217, 0.06) 100%);
+box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.20);
+backdrop-filter: blur(10px);
+}
+
+.tab-content-grid{
+border-radius: 10px;
+border: 1px solid var(--Broder, #E8EAE8);
+background: var(--Inner, #FFF);
+}
