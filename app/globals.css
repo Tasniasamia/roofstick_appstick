@@ -486,9 +486,10 @@
 
 
 .custom-shadow2{
- filter: 
-      drop-shadow(0 2px 4px rgba(15, 28, 51, 0.04)) 
-      drop-shadow(0 3px 8px rgba(15, 28, 51, 0.10));
+  fill: var(--Inner, #FFF);
+  stroke-width: 1px;
+  stroke: var(--600-main, #00ACC1);
+  filter: drop-shadow(0 20px 40px rgba(0, 172, 193, 0.25));
   }
   
 .read-more{
