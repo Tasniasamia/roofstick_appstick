@@ -55,7 +55,8 @@ const HeroSection1 = () => {
 
   return (
     <>
-      <Image
+
+        <Image
         src="/hero.png"
         width={1000}
         height={1000}
