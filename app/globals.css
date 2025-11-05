@@ -15,6 +15,16 @@
 
 
 @font-face {
+  font-family: "Raleway Bold";
+  src: url("/fonts/Raleway-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+
+
+@font-face {
   font-family: "Raleway";
   src: url("/fonts/Raleway-ExtraBold.ttf") format("truetype");
   font-weight: 800;
@@ -46,6 +56,10 @@
   color: var(--text-primary);
   transition: color 0.3s ease;
 }
+.text-secondary {
+  color: var(--color-text-secondary);
+  transition: color 0.3s ease;
+}
 .text-secondary:hover {
   color: var(--text-secondary-hover);
   transition: all 3s;
@@ -59,6 +73,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+.font-raleway-bold{
+  font-family: "Raleway Bold";
+
+}
 .font-raleway {
   font-family: "Raleway";
 }
@@ -467,3 +485,15 @@
 }
 
 
+.custom-shadow2{
+ filter: 
+      drop-shadow(0 2px 4px rgba(15, 28, 51, 0.04)) 
+      drop-shadow(0 3px 8px rgba(15, 28, 51, 0.10));
+  }
+  
+.read-more{
+  border-radius: 30px;
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, rgba(217, 217, 217, 0.06) 100%);
+box-shadow: 0 4px 25px -1px rgba(0, 0, 0, 0.20);
+backdrop-filter: blur(10px);
+}
