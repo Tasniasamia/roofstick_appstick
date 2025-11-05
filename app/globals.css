@@ -12,16 +12,20 @@
   --color-secondary: #088396;
   --color-text-secondary: #717171;
 }
+
+
 @font-face {
   font-family: "Raleway";
   src: url("/fonts/Raleway-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
 }
 
-
-
-.text-secondary {
-  color: var(--color-text-secondary);
-  transition: color 0.3s ease;
+@font-face {
+  font-family: "Raleway Normal";
+  src: url("/fonts/Raleway-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
 }
 
 .bg-primary {
@@ -58,7 +62,9 @@
 .font-raleway {
   font-family: "Raleway";
 }
-
+.font-raleway-normal{
+  font-family: "Raleway Normal";
+}
 .container {
   max-width: 1320px;
   margin: 0 auto;
