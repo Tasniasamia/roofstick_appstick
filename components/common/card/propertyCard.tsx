@@ -4,9 +4,9 @@ import React from "react";
 
 const PropertyCard = () => {
   return (
-    <div className="p-2.5 w-fit h-fit custom-shadow2 border border-[#E8EAE8] rounded-xl">
+    <div className="p-2.5 sm:w-fit w-[300px] h-fit 2xl:custom-shadow2 border border-[#E8EAE8] rounded-xl">
       <div
-        className="xl:w-[404px] xl:h-[404px] lg:w-[300px] lg:h-[300px]  h-[300px]  w-full relative rounded-xl"
+        className="2xl:w-[404px] 2xl:h-[404px]  lg:h-[300px] h-[200px]  w-full relative rounded-xl"
       >
         <Image
           src="/img1.png"
@@ -20,17 +20,16 @@ const PropertyCard = () => {
         </button>
 
         <div className="absolute inset-x-0 bottom-[11px] flex flex-row justify-between items-center  w-full">
-          <button className="read-more lg:ms-3.5 me-1 flex items-center gap-2 p-1 lg:gap-6 lg:p-1.5 lg:ps-3">
+          <button className="read-more lg:ms-3.5 me-1 flex items-center gap-2 p-1 lg:gap-6 lg:p-1.5 lg:ps-3 md:ps-1 ps-2">
             <span className="font-roboto lg:text-base text-sm font-normal text-white">
               Read More
             </span>
-            <span className="lg:h-8 lg:w-8 rounded-full flex items-center justify-center bg-white">
-              <ArrowRight className="lg:text-[20px] text-[10px] lg:block md:hidden block"  />
-              <ChevronRight className="lg:text-[20px] text-[10px] lg:hidden md:block hidden"  />
+            <span className="lg:h-8 md:h-5 md:w-5 lg:w-8 w-8 h-8 rounded-full flex items-center justify-center bg-white">
+              <ArrowRight className="lg:text-[20px] text-[10px]! "  />
 
             </span>
           </button>
-          <span className="font-roboto lg:text-xl text-base font-semibold text-white lg:me-3.5 me-1">
+          <span className="font-roboto lg:text-xl text-sm font-semibold text-white lg:me-3.5 me-1">
             $255000.00{" "}
           </span>
         </div>

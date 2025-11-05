@@ -4,7 +4,7 @@ import React from "react";
 
 const Categories = () => {
   return (
-    <div className="container relative z-40 w-full">
+    <div className="container relative z-40 w-full flex flex-col items-center">
       <div className="flex 2xl:-mt-7 w-fit  lg:mt-[-120px] mt-[-50px] flex-row 2xl:flex-nowrap 2xl:justify-start justify-center  flex-wrap gap-[44.8px] items-center p-8 bg-white rounded-lg 2xl:border border-[#E0E5EB]">
         <div className="flex flex-col p-3  items-center gap-2">
           <h5 className="text-[#111827] text-xl font-roboto font-semibold text-center">
