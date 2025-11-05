@@ -3,7 +3,7 @@ import { CardStack } from "@/components/ui/card-stack";
 
 const CardAnimation = () => {
   return (
-    <div className="lg:mt-[50px] mt-5">
+    <div className="lg:mt-[50px] mt-5 ">
       <CardStack items={CARDS} />
     </div>
   );

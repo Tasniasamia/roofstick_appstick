@@ -41,7 +41,7 @@ export const CardStack = ({
   };
 
   return (
-    <div className="relative w-[326px] h-[161px]">
+    <div className="relative sm:w-[326px]  w-[290px] h-[161px]">
    {cards.map((card, index) => {
   // Calculate dynamic opacity based on index
   const opacity =
@@ -50,7 +50,7 @@ export const CardStack = ({
   return (
     <motion.div
       key={card.id}
-      className="absolute w-[326px] h-[129px] p-2"
+      className="absolute sm:w-[326px] w-[290px] h-[129px] p-2"
       style={{
         transformOrigin: "top center",
       }}
