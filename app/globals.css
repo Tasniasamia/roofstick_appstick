@@ -22,6 +22,12 @@
 }
 
 
+@font-face {
+  font-family: "Raleway Semi bold";
+  src: url("/fonts/Raleway-SemiBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
 
 
 @font-face {
@@ -44,8 +50,12 @@
   transition: background-color 0.3s ease;
 }
 .bg-primary:hover {
-  background-color: var(--color-primary);
+  color:var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-radius:10px;
+  background-color:white;
 }
+
 .bg-secondary {
   background-color: var(--color-secondary);
   color: #fff;
@@ -71,6 +81,10 @@
 
 .font-roboto {
   font-family: "Roboto", sans-serif;
+}
+
+.font-raleway-semibold{
+  font-family:"Raleway Semi bold";
 }
 
 .font-raleway-bold{

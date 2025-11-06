@@ -10,7 +10,8 @@ const ExploreCities = () => {
         <div className="flex lg:flex-row flex-col justify-between items-end mb-[37px]">
           <HeaderTitle
             title={"Explore Cities"}
-            description={
+            widthClass="lg:w-[739px] w-[80%]"
+           description={
               "These are the latest properties in the Sales category. You can create the list using the “latest listing shortcode” and show items by specific categories."
             }
             customClass="items-start text-start"
@@ -29,7 +30,7 @@ const ExploreCities = () => {
               <p className="font-medium text-xl font-roboto">New York</p>
             </div>
             <Image
-              src="/img1.png"
+              src="/gallery1.png"
               width={500}
               height={500}
               alt="img"
@@ -44,7 +45,7 @@ const ExploreCities = () => {
               <p className="font-medium text-xl font-roboto">New York</p>
             </div>
             <Image
-              src="/img1.png"
+              src="/gallery2.png"
               width={500}
               height={500}
               alt="img"
@@ -59,7 +60,7 @@ const ExploreCities = () => {
               <p className="font-medium text-xl font-roboto">New York</p>
             </div>
             <Image
-              src="/img1.png"
+              src="/gallery3.png"
               width={500}
               height={500}
               alt="img"
@@ -74,7 +75,7 @@ const ExploreCities = () => {
               <p className="font-medium text-xl font-roboto">New York</p>
             </div>
             <Image
-              src="/img1.png"
+              src="/gallery4.png"
               width={500}
               height={500}
               alt="img"
@@ -89,7 +90,7 @@ const ExploreCities = () => {
               <p className="font-medium text-xl font-roboto">New York</p>
             </div>
             <Image
-              src="/img1.png"
+              src="/gallery2.png"
               width={500}
               height={500}
               alt="img"
@@ -104,7 +105,7 @@ const ExploreCities = () => {
               <p className="font-medium text-xl font-roboto">New York</p>
             </div>
             <Image
-              src="/img1.png"
+              src="/gallery5.png"
               width={500}
               height={500}
               alt="img"

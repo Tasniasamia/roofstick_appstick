@@ -1,6 +1,8 @@
 "use client";
+import Button from "@/components/common/button";
 import PropertyCard from "@/components/common/card/propertyCard";
 import HeaderTitle from "@/components/common/headerTitle";
+import {ArrowRight } from "lucide-react";
 import React, { useState } from "react";
 
 const Properties = () => {
@@ -13,6 +15,7 @@ const Properties = () => {
           description={
             "These are the latest properties in the Sales category. You can create the list using the “latest listing shortcode” and show items by specific categories."
           }
+          widthClass="lg:w-[739px] w-[80%]"
           customClass="items-center text-center"
         />
         <div className="flex flex-row justify-center pt-10 pb-6 gap-6 items-center">
@@ -42,6 +45,9 @@ const Properties = () => {
           <PropertyCard />
           <PropertyCard />
           <PropertyCard />
+        </div>
+        <div className="my-6 flex flex-row justify-center w-full">
+        <Button title={"View Details"} Icon={ArrowRight} isIcon={true}/>
         </div>
       </div>
     </div>

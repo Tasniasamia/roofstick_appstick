@@ -15,7 +15,7 @@ const Button = ({
   href?:string
 }) => {
   return (
-    <div className={`font-roboto text-base bg-primary w-fit px-6 py-4 rounded-[10px] flex gap-2 items-center justify-center ${customClass}`} onClick={()=>{
+    <div className={`font-roboto group text-base bg-primary w-fit px-6 py-4 rounded-[10px] flex gap-2 items-center justify-center ${customClass}`} onClick={()=>{
     if(href){
         window.location.href=href;
     }
@@ -24,7 +24,7 @@ const Button = ({
     }
     }}>
       <span>{title}</span>
-      {isIcon && Icon && <Icon size={10} />}
+      {isIcon && Icon && <Icon size={20} className="text-white group-hover:text-[#4cac40] duration-300 transition-all"/>}
     </div>
   );
 };
