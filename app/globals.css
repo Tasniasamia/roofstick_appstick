@@ -498,3 +498,10 @@ background: linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, rgba(217, 217,
 box-shadow: 0 4px 25px -1px rgba(0, 0, 0, 0.20);
 backdrop-filter: blur(10px);
 }
+
+.img-small-overlay{
+border-radius: 8px;
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, rgba(217, 217, 217, 0.06) 100%);
+box-shadow: 0 4px 25px -1px rgba(0, 0, 0, 0.20);
+backdrop-filter: blur(10px);
+}

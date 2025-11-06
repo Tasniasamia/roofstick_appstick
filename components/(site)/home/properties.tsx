@@ -6,7 +6,7 @@ import React, { useState } from "react";
 const Properties = () => {
   const [tab, setTab] = useState("sale");
   return (
-    <div className="lg:mt-[120px] mt-[60px]">
+    <div className="lg:mt-[120px] mt-[60px] 2xl:px-0 px-3">
       <div className="container">
         <HeaderTitle
           title={"Featured Properties"}
