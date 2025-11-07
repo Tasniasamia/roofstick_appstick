@@ -10,6 +10,7 @@ import OurTestimonial from '@/components/(site)/home/ourTestimonial';
 import Properties from '@/components/(site)/home/properties';
 import Work from '@/components/(site)/home/work';
 import Categories from '@/components/common/categories';
+import Image from 'next/image';
 import React from 'react';
 
 const page = () => {
@@ -23,10 +24,14 @@ const page = () => {
             <OurService/>
             <AgentService/>
             <About/>
-            <OurClients/>
-            <CardStackSlider/>
-            <OurBlog/>
             
+            
+            <CardStackSlider/>
+            <div className='relative'>
+            <Image src="/vector-xl.png" width={2000} height={2000} alt="vector" className='object-center w-full h-[1579px] absolute  top-[-388px] left-0'/>
+            <OurClients/>
+            <OurBlog/>
+            </div>
         </div>
     );
 };
