@@ -21,7 +21,7 @@ const AgentServiceCard = () => {
         Easily find your dream home right where you are. Use location-based
         filters to explore nearby listings that match your lifestyle and budget.
       </p>
-      <Button title={"View Details"} Icon={ArrowRightIcon} isIcon={true}/>
+      <Button title={"Place an Ad"} Icon={ArrowRightIcon} isIcon={true}/>
 
 
     </div>

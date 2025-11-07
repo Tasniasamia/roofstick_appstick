@@ -1,6 +1,8 @@
+import About from '@/components/(site)/home/about';
 import AgentService from '@/components/(site)/home/agentService';
 import ExploreCities from '@/components/(site)/home/exploreCities';
 import HeroSection1 from '@/components/(site)/home/hero';
+import OurBlog from '@/components/(site)/home/ourBlog';
 import OurClients from '@/components/(site)/home/ourClients';
 import OurService from '@/components/(site)/home/ourService';
 import Properties from '@/components/(site)/home/properties';
@@ -18,7 +20,9 @@ const page = () => {
             <Work isHome1={true}/>
             <OurService/>
             <AgentService/>
+            <About/>
             <OurClients/>
+            <OurBlog/>
         </div>
     );
 };
