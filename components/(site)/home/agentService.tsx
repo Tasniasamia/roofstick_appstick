@@ -12,7 +12,7 @@ const AgentService = () => {
           "A great platform to buy, sell and rent your properties without any agent or commissions."
         }
         customClass="items-center text-center  "
-        widthClass="lg:w-[891px] md:w-[500px] w-[80%]"
+        customClass3="lg:w-[891px] md:w-[500px] w-[80%]"
       />
       <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 items-center mt-6">
         <AgentServiceCard />

@@ -15,7 +15,7 @@ const Properties = () => {
           description={
             "These are the latest properties in the Sales category. You can create the list using the “latest listing shortcode” and show items by specific categories."
           }
-          widthClass="lg:w-[739px] w-[80%]"
+          customClass3="lg:w-[739px] w-[80%]"
           customClass="items-center text-center"
         />
         <div className="flex flex-row justify-center pt-10 pb-6 gap-6 items-center">

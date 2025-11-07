@@ -15,7 +15,7 @@ const Work = ({isHome1}:{isHome1:boolean}) => {
             "A great platform to buy, sell and rent your properties without any agent or commissions."
           }
           customClass="items-center text-center  "
-          widthClass="sm:w-[500px] w-[80%]"
+          customClass3="sm:w-[500px] w-[80%]"
         />
         <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 items-center mt-10">
           <WorkCard />

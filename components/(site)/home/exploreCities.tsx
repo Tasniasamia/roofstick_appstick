@@ -10,7 +10,7 @@ const ExploreCities = () => {
         <div className="flex lg:flex-row flex-col justify-between items-end mb-[37px]">
           <HeaderTitle
             title={"Explore Cities"}
-            widthClass="lg:w-[739px] w-[80%]"
+            customClass3="lg:w-[739px] w-[80%]"
            description={
               "These are the latest properties in the Sales category. You can create the list using the “latest listing shortcode” and show items by specific categories."
             }

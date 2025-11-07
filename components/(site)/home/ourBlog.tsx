@@ -12,9 +12,9 @@ const OurBlog = () => {
             "Explore expert tips, market trends, and property insights.Stay informed with our latest real estate news and blogs."
           }
           customClass="items-center text-center  "
-          widthClass="md:w-[427px] w-[80%]"
+          customClass3="md:w-[427px] w-[80%]"
         />
-        <div className="mt-10 grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
+        <div className="mt-10 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 sm:place-items-start place-items-center">
           <BlogCard />
           <BlogCard />
           <BlogCard />
