@@ -23,7 +23,6 @@ const page = () => {
             <OurService/>
             <AgentService/>
             <About/>
-            <OurTestimonial/>
             <OurClients/>
             <CardStackSlider/>
             <OurBlog/>
