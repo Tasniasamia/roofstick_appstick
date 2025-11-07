@@ -1,4 +1,4 @@
-import WorkCard from "@/components/common/card/workCard";
+import WorkCard from "@/components/(site)/home/card/workCard";
 import HeaderTitle from "@/components/common/headerTitle";
 import Image from "next/image";
 import React from "react";
