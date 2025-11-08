@@ -22,7 +22,7 @@ const ContactUs1 = () => {
         <div className="flex xl:gap-1 gap-4 sm:flex-row flex-col xl:items-center items-start">
           <Button title="Contact Us" Icon={MoveUpRight} isIcon={true} />
           <button
-            className={`font-roboto border-[#4cac40] border text-primary  group text-base w-fit px-6 py-4 rounded-[10px] flex gap-2 items-center justify-center `}
+            className={`font-roboto cursor-pointer border-[#4cac40] border text-primary  group text-base w-fit px-6 py-4 rounded-[10px] flex gap-2 items-center justify-center `}
             onClick={() => {
               window.location.href = "/";
             }}

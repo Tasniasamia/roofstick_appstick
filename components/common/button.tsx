@@ -7,15 +7,17 @@ const Button = ({
   isIcon,
   customClass,
   href,
+  widthClass
 }: {
   title?: string;
   Icon?: React.ElementType;
   isIcon?: boolean;
   customClass?:string;
-  href?:string
+  href?:string;
+  widthClass?:string
 }) => {
   return (
-    <div className={`font-roboto group text-base bg-primary w-fit px-6 py-4 rounded-[10px] flex gap-2 items-center justify-center ${customClass}`} onClick={()=>{
+    <div className={`font-roboto ${widthClass?widthClass:'w-fit'} group cursor-pointer text-base bg-primary  px-6 py-4 rounded-[10px] flex gap-2 items-center justify-center ${customClass}`} onClick={()=>{
     if(href){
         window.location.href=href;
     }
