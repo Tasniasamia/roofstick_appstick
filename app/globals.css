@@ -70,10 +70,6 @@
   color: var(--color-text-secondary);
   transition: color 0.3s ease;
 }
-.text-secondary:hover {
-  color: var(--text-secondary-hover);
-  transition: all 3s;
-}
 
 .font-Inter {
   font-family: "Inter", sans-serif;
@@ -532,4 +528,8 @@ color:#A2A8AF!important;
   .contact{
   boxShadow: 0 24px 40px -10px rgba(15, 28, 51, 0.16) ;
   }
+}
+
+.service-title{
+  clip-path: polygon(10% 0, 90% 0, 100% 100%, 0% 100%);
 }

@@ -8,6 +8,7 @@ import HeroSection1 from '@/components/(site)/home/hero';
 import OurBlog from '@/components/(site)/home/ourBlog';
 import OurClients from '@/components/(site)/home/ourClients';
 import OurService from '@/components/(site)/home/ourService';
+import OurService2 from '@/components/(site)/home/ourService2';
 import OurTeam from '@/components/(site)/home/ourTeam';
 import OurTestimonial from '@/components/(site)/home/ourTestimonial';
 import Properties from '@/components/(site)/home/properties';
@@ -36,6 +37,7 @@ const page = () => {
             <ContactUs1/>
             <ContactUs2/>
             <OurTeam/>
+            <OurService2/>
             
         </div>
     );
