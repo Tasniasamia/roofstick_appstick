@@ -528,3 +528,8 @@ textarea #message{
 background-color:white!important;
 color:#A2A8AF!important;
 }
+@media (min-width: 1280px) {
+  .contact{
+  boxShadow: 0 24px 40px -10px rgba(15, 28, 51, 0.16) ;
+  }
+}

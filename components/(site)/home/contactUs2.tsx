@@ -166,8 +166,8 @@ const ContactUs2 = () => {
   return (
     <div className="lg:mt-[120px] mt-[60px]">
       <div
-        className="container bg-white rounded-xl lg:border border-[#E8EAE8] flex flex-col lg:flex-row justify-between items-center lg:h-[700px] h-auto overflow-hidden"
-        style={{ boxShadow: "0 24px 40px -10px rgba(15, 28, 51, 0.16)" }}
+        className="container contact bg-white rounded-xl lg:border border-[#E8EAE8] flex flex-col lg:flex-row justify-between items-center lg:h-[700px] h-auto overflow-hidden"
+        // style={{ }}
       >
         {/* ---------- Left Form Section ---------- */}
         <form
