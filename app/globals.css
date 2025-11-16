@@ -533,3 +533,8 @@ color:#A2A8AF!important;
 .service-title{
   clip-path: polygon(10% 0, 90% 0, 100% 100%, 0% 100%);
 }
+.video-blur{
+  border-radius: 12px;
+background: rgba(255, 255, 255, 0.22);
+backdrop-filter: blur(5px);
+}

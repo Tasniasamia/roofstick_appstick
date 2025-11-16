@@ -7,23 +7,26 @@ const Button = ({
   isIcon,
   customClass,
   href,
-  widthClass
+  widthClass,
+  onClick,
 }: {
   title?: string;
   Icon?: React.ElementType;
   isIcon?: boolean;
   customClass?:string;
   href?:string;
-  widthClass?:string
+  widthClass?:string;
+  onClick?:()=>{}
 }) => {
   return (
-    <div className={`font-roboto ${widthClass?widthClass:'w-fit'} static z-50 group cursor-pointer text-base bg-primary  px-6 py-4 rounded-[10px] flex gap-2 items-center justify-center ${customClass}`} onClick={()=>{
-    if(href){
+    <div  className={`font-roboto ${widthClass?widthClass:'w-fit'} static z-50 group cursor-pointer text-base bg-primary  px-6 py-4 rounded-[10px] flex gap-2 items-center justify-center ${customClass}`} onClick={()=>{
+      if(onClick) {
+       return onClick();
+      }
+      if(href){
         window.location.href=href;
     }
-    else{
-        window.location.href="/"
-    }
+
     }}>
       <span>{title}</span>
       {isIcon && Icon && <Icon size={20} className="text-white group-hover:text-[#4cac40] duration-300 transition-all"/>}
