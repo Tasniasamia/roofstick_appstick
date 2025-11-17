@@ -1,10 +1,10 @@
 {
     "categories": [
-      { "id": "1", "name": "Transport", "icon": "Bus", "color": "#14b8a6" },
-      { "id": "2", "name": "Education", "icon": "BookOpen", "color": "#3b82f6" },
-      { "id": "3", "name": "Shopping", "icon": "ShoppingBag", "color": "#f59e0b" },
-      { "id": "4", "name": "Food", "icon": "Utensils", "color": "#ef4444" },
-      { "id": "5", "name": "Parks", "icon": "Trees", "color": "#22c55e" }
+      { "id": "1", "name": "Transport" },
+      { "id": "2", "name": "Education"},
+      { "id": "3", "name": "Shopping" },
+      { "id": "4", "name": "Food"},
+      { "id": "5", "name": "Parks" }
     ],
   
     "places": [

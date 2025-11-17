@@ -12,6 +12,7 @@ import { IoMdBicycle, IoLogoWhatsapp } from "react-icons/io";
 import { BsSend } from "react-icons/bs";
 import { FaPhoneAlt, FaRegUser } from "react-icons/fa";
 import { MdEmail, MdLocationOn, MdOutlineEmail } from "react-icons/md";
+import MapView from "@/components/common/myMap";
 
 const PropertyDetails = () => {
   let [isPlaying, setIsPlaying] = useState<Boolean | null>(false);
@@ -269,6 +270,10 @@ const PropertyDetails = () => {
                     <span>59/100 Bikable</span>
                   </li>
                 </ul>
+                <h3 className="text-2xl mt-6 font-semibold font-roboto text-primary">
+                  Locations
+                </h3>
+                <MapView/>
               </div>
             </div>
             <div
