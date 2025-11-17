@@ -1,0 +1,33 @@
+{
+    "categories": [
+      { "id": "1", "name": "Transport", "icon": "Bus", "color": "#14b8a6" },
+      { "id": "2", "name": "Education", "icon": "BookOpen", "color": "#3b82f6" },
+      { "id": "3", "name": "Shopping", "icon": "ShoppingBag", "color": "#f59e0b" },
+      { "id": "4", "name": "Food", "icon": "Utensils", "color": "#ef4444" },
+      { "id": "5", "name": "Parks", "icon": "Trees", "color": "#22c55e" }
+    ],
+  
+    "places": [
+      { "id": "p1", "name": "Central Railway Station", "category_id": "1", "latitude": 8, "longitude": 15, "distance": 0, "description": "Main railway hub" },
+      { "id": "p2", "name": "Bus Terminus", "category_id": "1", "latitude": 12, "longitude": 25, "distance": 1.2, "description": "Central bus station" },
+      { "id": "p3", "name": "Metro Station", "category_id": "1", "latitude": 25, "longitude": 40, "distance": 2.5, "description": "Subway station" },
+  
+      { "id": "p4", "name": "City University", "category_id": "2", "latitude": 35, "longitude": 18, "distance": 1.8, "description": "Major university" },
+      { "id": "p5", "name": "Central School", "category_id": "2", "latitude": 45, "longitude": 35, "distance": 2.1, "description": "Secondary school" },
+      { "id": "p6", "name": "Tech Institute", "category_id": "2", "latitude": 65, "longitude": 25, "distance": 3.5, "description": "IT education center" },
+  
+      { "id": "p7", "name": "Grand Mall", "category_id": "3", "latitude": 20, "longitude": 52, "distance": 2.2, "description": "Shopping mall" },
+      { "id": "p8", "name": "Central Market", "category_id": "3", "latitude": 55, "longitude": 45, "distance": 2.8, "description": "Traditional market" },
+      { "id": "p9", "name": "Fashion District", "category_id": "3", "latitude": 75, "longitude": 55, "distance": 4.1, "description": "Shopping area" },
+  
+      { "id": "p10", "name": "Pizza House", "category_id": "4", "latitude": 15, "longitude": 30, "distance": 1.5, "description": "Italian restaurant" },
+      { "id": "p11", "name": "Royal Biryani", "category_id": "4", "latitude": 30, "longitude": 48, "distance": 2.4, "description": "Indian restaurant" },
+      { "id": "p12", "name": "Coffee Corner", "category_id": "4", "latitude": 50, "longitude": 35, "distance": 2.9, "description": "Cafe" },
+      { "id": "p13", "name": "Street Tacos", "category_id": "4", "latitude": 68, "longitude": 28, "distance": 3.8, "description": "Food stall" },
+  
+      { "id": "p14", "name": "Central Park", "category_id": "5", "latitude": 40, "longitude": 62, "distance": 3.2, "description": "City park" },
+      { "id": "p15", "name": "Green Valley Park", "category_id": "5", "latitude": 22, "longitude": 18, "distance": 1.9, "description": "Nature park" },
+      { "id": "p16", "name": "Riverside Park", "category_id": "5", "latitude": 10, "longitude": 58, "distance": 3.5, "description": "Waterfront park" }
+    ]
+  }
+  

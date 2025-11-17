@@ -14,6 +14,8 @@ import OurTestimonial from '@/components/(site)/home/ourTestimonial';
 import Properties from '@/components/(site)/home/properties';
 import Work from '@/components/(site)/home/work';
 import Categories from '@/components/common/categories';
+import MapContainerCustom from '@/components/common/mapContainer';
+import MapView from '@/components/common/myMap';
 import Image from 'next/image';
 import React from 'react';
 
@@ -38,7 +40,11 @@ const page = () => {
             <ContactUs2/>
             <OurTeam/>
             <OurService2/>
-            
+            <div className='container'>
+                <div className='lg:mt-[120px] mt-[60px]'>
+                 <MapView/>
+                </div>
+            </div>
         </div>
     );
 };

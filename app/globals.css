@@ -538,3 +538,9 @@ color:#A2A8AF!important;
 background: rgba(255, 255, 255, 0.22);
 backdrop-filter: blur(5px);
 }
+.leaflet-container {
+   position: relative;
+}
+.leaflet-tile-pane {
+   position: absolute;
+}
