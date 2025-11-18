@@ -15,10 +15,10 @@ const page = () => {
     <div>
       <Banner routeName="Blog" />
       <div className="container grid place-items-center">
-        <div className="w-[700px] mt-[115px]"style={{boxShadow:"0 72px 132px 0 rgba(15, 28, 51, 0.06)"}}>
+        <div className="lg:w-[720px] sm:w-[600px] w-full lg:mt-[115px] mt-[60px]"style={{boxShadow:"0 72px 132px 0 rgba(15, 28, 51, 0.06)"}}>
           <SearchInput
             onClick={handleSubmit}
-            customClass="w-[720px] h-20 "
+            customClass="w-full h-20 "
             placeholder="Search blog, news or house..."
           />
         </div>

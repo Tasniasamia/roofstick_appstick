@@ -6,6 +6,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Globe, ListPlus, LogIn, Menu, X } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
 
@@ -35,7 +36,7 @@ const Navbar = () => {
             <ListPlus className="text-xl sm:text-2xl md:text-2xl cursor-pointer font-medium" />
             <Globe className="text-xl sm:text-2xl md:text-2xl cursor-pointer text-[#05073C] font-medium" />
             {user ? (
-              <HoverDropdown items={["Dashboard", "Logout"]} image="/man.png" />
+              <HoverDropdown items={[{label:'Dashboard',href:"/dashboard"},{label:'LogOut',onClick:()=>{window.location.href="/"}}]} image="/man.png" />
             ) : (
               <LogIn className="text-xl sm:text-2xl md:text-2xl cursor-pointer text-[#05073C]" />
             )}
@@ -72,7 +73,7 @@ function HoverDropdown({
   image,
 }: {
   label?: string;
-  items: string[];
+  items: {label:string,href?:string,onClick?:()=>void}[];
   image?: string;
 }) {
   const [open, setOpen] = React.useState(false);
@@ -97,7 +98,8 @@ function HoverDropdown({
             <div className="relative pb-1  after:absolute after:w-0 after:h-0.5 after:content-[''] after:bg-[#00ACC1] hover:after:w-full after:left-0 after:bottom-0 after:duration-300 text-[#05073C] cursor-pointer hover:text-[#00ACC1] duration-300 transition-all">
               <div className="flex gap-1.5 items-center">
                 {label}{" "}
-                <FaChevronDown className="group-hover:rotate-180 duration-300" />
+                <FaChevronDown className={`group-hover:rotate-180 ${open && "rotate-180 "} duration-300`}
+        />
               </div>
             </div>
           )}
@@ -109,12 +111,17 @@ function HoverDropdown({
           sideOffset={5}
         >
           <ul className="list-none text-[18px] leading-7 flex flex-col">
-            {items.map((item) => (
+            {items.map((item,index) => (
               <li
-                key={item}
+                key={index}
                 className="p-2 cursor-pointer hover:bg-[#00ACC1] hover:text-white duration-300 transition-all"
               >
-                {item}
+                {item?.href ? (
+                  <Link href={item?.href}>{item?.label}</Link>
+                ):(
+                  <span onClick={item?.onClick}>{item?.label}</span>
+                )}
+                
               </li>
             ))}
           </ul>
@@ -127,17 +134,17 @@ function HoverDropdown({
 export const MenuList = () => {
   return (
     <ul className="static z-20 list-none flex lg:flex-row flex-col gap-10 items-center text-[20px] font-medium font-roboto leading-7">
-      <HoverDropdown label="Home" items={["Home 1", "Home 2"]} />
+      <HoverDropdown label="Home" items={[{label:'Home 1',href:"/"},{label:'Home 2',href:"/home2"}]} />
       <li className="relative pb-1 after:absolute after:w-0 after:h-0.5 after:content-[''] after:bg-[#00ACC1] hover:after:w-full after:left-0 after:bottom-0 after:duration-300 text-[#05073C] cursor-pointer hover:text-[#00ACC1] duration-300 transition-all">
-        About
+        <Link href="/about">About</Link>
       </li>
       <li className="relative pb-1 after:absolute after:w-0 after:h-0.5 after:content-[''] after:bg-[#00ACC1] hover:after:w-full after:left-0 after:bottom-0 after:duration-300 text-[#05073C] cursor-pointer hover:text-[#00ACC1] duration-300 transition-all">
-        Property
+      <Link href="/property">Property</Link>
       </li>
       <li className="relative pb-1 after:absolute after:w-0 after:h-0.5 after:content-[''] after:bg-[#00ACC1] hover:after:w-full after:left-0 after:bottom-0 after:duration-300 text-[#05073C] cursor-pointer hover:text-[#00ACC1] duration-300 transition-all">
-        Projects
+      <Link href="/projects">Projects</Link>
       </li>
-      <HoverDropdown label="More" items={["Blog", "FAQ", "Contact"]} />
+      <HoverDropdown label="More" items={[{label:'Blog',href:"/blog"},{label:'Faq',href:"/faq"},{label:'Contact',href:"/contact"}]} />
     </ul>
   );
 };
