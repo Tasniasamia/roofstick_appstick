@@ -17,7 +17,7 @@ const HeaderTitle = ({
     <div className={`flex flex-col md:gap-6 static z-40 gap-4 ${customClass}`}>
       <h2
         className={`text-primary static z-40  font-raleway-bold  font-bold leading-none 
-text-[24px] sm:text-[32px] md:text-[40px] lg:text-[44px] xl:text-[48px] ${customClass2}`}
+text-2xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-5xl ${customClass2}`}
       >
         {title}
       </h2>
