@@ -11,6 +11,7 @@ interface LocationDropdownProps {
   customClass?: string;
   Icon?: React.ElementType;
   strokeColor?:string;
+  onChange?:(e:React.ChangeEvent<HTMLSelectElement>) =>void
 }
 
 export function LocationDropdown({
@@ -22,6 +23,7 @@ export function LocationDropdown({
   label,
   name,
   placeholder,
+  onChange
 }: LocationDropdownProps) {
   return (
     <div className="flex flex-col gap-2">
@@ -31,7 +33,8 @@ export function LocationDropdown({
           <Icon className={`absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5  ${strokeColor?strokeColor:'text-[#05073C]'}  pointer-events-none`} />
         )}
 
-        <select
+        <select 
+          onChange={onChange}
           name={name}
           className={`
             ${customClass} 

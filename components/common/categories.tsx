@@ -25,10 +25,10 @@ const categoires: { name: string; count: string }[] = [
   },
 ];
 
-const Categories = () => {
+const Categories = ({customControl}:{customControl:boolean}) => {
   return (
     <div className="container relative z-40 w-full flex flex-col items-center">
-      <div className="flex 2xl:-mt-7 w-fit  lg:mt-[-120px] mt-[-50px] flex-row 2xl:flex-nowrap 2xl:justify-start justify-center  flex-wrap gap-[44.8px] items-center p-8 bg-white rounded-lg 2xl:border border-[#E0E5EB]">
+      <div className={`flex p-8 ${customControl?"2xl:-mt-7 lg:mt-[-120px] mt-[-50px] 2xl:border" :"border lg:mt-[120px] mt-[60px] "} w-fit flex-row 2xl:flex-nowrap 2xl:justify-start justify-center  flex-wrap gap-[44.8px] items-center  bg-white rounded-lg   border-[#E0E5EB]`}>
         {categoires?.map((i, index) => {
           return (
             <React.Fragment key={index}>

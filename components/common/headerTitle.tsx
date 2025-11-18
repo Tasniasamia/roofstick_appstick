@@ -9,7 +9,7 @@ const HeaderTitle = ({
 }: {
   title: string;
   description: string;
-  customClass: string;
+  customClass?: string;
   customClass2?: string;
   customClass3?:string
 }) => {

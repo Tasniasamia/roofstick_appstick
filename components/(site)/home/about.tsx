@@ -14,7 +14,7 @@ const About = () => {
         className="absolute bottom-0 right-0 object-center lg:block hidden"
         alt="vector"
       />
-      <div className="container flex xl:flex-row flex-col gap-10 items-center">
+      <div className="container static z-20 flex xl:flex-row flex-col gap-10 items-center">
         <div className="md:w-[688px] relative md:h-[714px]">
           <div className="absolute shrink-0 right-2.5 top-1/2 bg-white rounded-xl sm:right-[165px] sm:top-[229px] py-[29px] ps-6 pe-[55px] flex flex-row gap-6">
             <div className="w-11 h-11 bg-[#053A47] grid place-content-center text-white rounded-full">
@@ -61,7 +61,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="sm:w-[552px]">
+        <div className="sm:w-[552px] static z-20">
           <h2
             className="text-[#313234] static z-40 mb-6 font-raleway-bold  font-bold leading-none 
 text-[24px] sm:text-[32px] md:text-[40px] lg:text-[44px] xl:text-[48px]"
