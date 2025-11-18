@@ -6,7 +6,7 @@ import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 const Blogdetails = () => {
   return (
     <div className="container">
-      <div className="lg:mt-[120px] mt-[60px]">
+      <div className="lg:mt-[120px] mt-[60px] 2xl:px-0 px-3">
         <HeaderTitle
           title={"Latest Design Trends You Need to Know"}
           description={
@@ -17,12 +17,12 @@ const Blogdetails = () => {
         />
         <div>
           {/* Image Part */}
-          <div className="grid xl:grid-cols-4 gap-6 mt-10">
+          <div className="grid xl:grid-cols-4 sm:grid-cols-3 gap-6 mt-10">
             <Image
               src="/img1.png"
               width={984}
               height={553}
-              className="w-full h-[553px] col-span-3 rounded-xl object-center"
+              className="w-full lg:h-[553px] md:h-[453px] sm:h-[353px] h-[265px] xl:col-span-3 sm:col-span-2 rounded-xl object-center"
               alt="blog1"
             />
             <div className="flex flex-col gap-6">
@@ -30,21 +30,21 @@ const Blogdetails = () => {
                 src="/img2.png"
                 width={312}
                 height={265}
-                className="w-full h-[265px] col-span-3 rounded-xl object-center"
+                className="w-full lg:h-[265px] md:h-[214px] sm:h-[165px] h-[265px] col-span-3 rounded-xl object-center"
                 alt="blog2"
               />
               <Image
                 src="/img3.png"
                 width={312}
                 height={265}
-                className="w-full h-[265px] col-span-3 rounded-xl object-center"
+                className="w-full lg:h-[265px] md:h-[214px] sm:h-[165px] h-[265px]  col-span-3 rounded-xl object-center"
                 alt="blog3"
               />
             </div>
           </div>
           {/* content part */}
-          <div className="mt-10 grid xl:grid-cols-4 gap-6">
-            <div className="col-span-3">
+          <div className="mt-10 grid xl:grid-cols-4 sm:grid-cols-3 gap-6">
+            <div className="xl:col-span-3 sm:col-span-2 ">
               <p className="text-base text-secondary font-roboto font-normal">
                 One of the strongest design movements is the return to natural
                 and earthy materials. Wood, stone, clay, and organic fabrics are
@@ -67,9 +67,9 @@ const Blogdetails = () => {
                 <p className="text-base font-roboto font-semibold">
                   SHARE THIS ON
                 </p>
-                <FaFacebook className="text-[22px] text-black"/>
-                <FaTwitter className="text-[22px] text-black"/>
-                <FaInstagram className="text-[22px] text-black"/>
+                <FaFacebook className="text-[22px] text-black" />
+                <FaTwitter className="text-[22px] text-black" />
+                <FaInstagram className="text-[22px] text-black" />
               </div>
             </div>
           </div>
