@@ -8,7 +8,7 @@ const WhatSetsMeApart = () => {
     <div className="lg:mt-[120px] mt-[60px] 2xl:px-0 px-3">
       <div className="container grid xl:gap-14 gap-8 lg:grid-cols-2 ">
         <div>
-          <h5 className="uppercase text-2xl font-roboto text-black mb-[35px]">
+          <h5 className="uppercase text-2xl font-roboto text-black 2xl:mb-[35px] mb-6">
             WHAT SETS ME APART
           </h5>
           <HeaderTitle
